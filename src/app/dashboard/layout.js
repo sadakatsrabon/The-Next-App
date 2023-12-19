@@ -1,9 +1,10 @@
 import React from 'react';
 
-const DashboardLayout = () => {
+const DashboardLayout = ({ children }) => {
     return (
         <div>
-            This Layout is the nested Layout for Dashboard page. 
+            Menu Drawer
+            {children}
         </div>
     );
 };
