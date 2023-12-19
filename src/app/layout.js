@@ -13,11 +13,13 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <body
         className={inter.className}>
-          <nav>
-            <a>home</a>
-          </nav>
+        <nav className='flex justify-around bg-red-500'>
+          <a className='text-xl bg-red-600 rounded-lg p-1'>Home</a>
+          <a className='text-xl bg-red-600 rounded-lg p-1'>House</a>
+          <a className='text-xl bg-red-600 rounded-lg p-1'>Hut</a>
+        </nav>
         {children}
-        <footer>footer</footer>
+        <footer className='bg-red-500 text-center text-xl font-bold uppercase'>footer</footer>
       </body>
     </html>
   )
