@@ -6,7 +6,7 @@ export const metadata = {
   }
 
 const About = () => {
-    return (
+    return ( 
         <div>
             This the Next About page.
         </div>
