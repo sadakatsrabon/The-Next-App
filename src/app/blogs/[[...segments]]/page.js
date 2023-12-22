@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PrimaryBlog = ({ params }) => {
-    const [year, id] = params.segments;
+    const [year, id] = params.segments || [];
     console.log(params.segments);
     return (
         <div className='p-6'>
