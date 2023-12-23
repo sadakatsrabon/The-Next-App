@@ -8,7 +8,7 @@ const PrimaryBlog = ({ params }) => {
             <h2 className='text-center text-xl font-extrabold'>
                 This Primary Blog page is for the testing purpose of Dynamig route. {year}.
             </h2>
-            <h4 className='text-center text-2xl'>Route number{id} from year: {year}</h4>
+            <h4 className='text-center text-2xl'>Route number{id} from year: {year || new Date().getFullYear()}</h4>
         </div>
     );
 };
