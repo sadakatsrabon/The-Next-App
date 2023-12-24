@@ -21,16 +21,16 @@ const navLinks = [
 
 const Navbar = () => {
     return (
-        <div>
-            <h2>Nav in - The next Sadakat.</h2>
-            <ul>
+        <nav className='bg-red-400'>
+            <ul className='flex justify-around'>
                 {
-                    navLinks.map(({ path, title }) => <li key={path}>
-                        <Link href={path}>{title}</Link>
-                    </li>)
+                    navLinks.map(({ path, title }) =>
+                        <li className=' bg-red-500 rounded-md p-1 font-semibold uppercase' key={path}>
+                            <Link href={path}>{title}</Link>
+                        </li>)
                 }
             </ul>
-        </div>
+        </nav>
     );
 };
 
